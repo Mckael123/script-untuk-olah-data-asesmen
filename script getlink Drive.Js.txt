@@ -1,0 +1,47 @@
+function MencariID() {
+var ss=SpreadsheetApp.getActiveSpreadsheet();
+var s=ss.getActiveSheet();
+var c=s.getRange("x2");
+var fldr=DriveApp.getFolderById("1MieE3XPlwxabsSL7lS7giXVTZjjzbQN4");
+var files=fldr.getFiles();
+var names=[],f,str; 
+while (files.hasNext()) {
+f=files.next();
+str = f.getId();
+names.push([str]);
+}
+s.getRange(c.getRow(),c.getColumn(),names.length).setFormulas(names); }
+
+function MencariNama() {
+var ss=SpreadsheetApp.getActiveSpreadsheet();
+var s=ss.getActiveSheet();
+var c=s.getRange("y2");
+var fldr=DriveApp.getFolderById("1MieE3XPlwxabsSL7lS7giXVTZjjzbQN4");
+var files=fldr.getFiles();
+var names=[],f,str; 
+while (files.hasNext()) {
+f=files.next();
+str = f.getName(); 
+names.push([str]);
+}
+s.getRange(c.getRow(),c.getColumn(),names.length).setValues(names); }
+
+function MencariTertinggi(){
+  var tss=SpreadsheetApp.getActiveSpreadsheet();
+  var ts=tss.getActiveSheet();
+  
+  //var cell=ts.getRange("i2");
+  var cell=ts.getRange("j2");
+  //definisi array
+  var pilihan = [];
+  //logic loop konditional
+  var jumlah = 134;
+  /*for (var i = 0;i<jumlah;i+1){
+    //conditional tertinggi
+
+  } */
+  //set value
+  //baris,kolom,banyaknya
+  ts.getRange(4,10).setValue("test tok");
+  //ts.getRange(cell.getRow(),cell.getColumn()).setValues("test tok");
+}
