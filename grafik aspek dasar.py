@@ -28,6 +28,6 @@ for index, row in data.iterrows():
    #plt.ylabel('Category')
 
     # Show plot
-    plt.savefig("D:\direktori-saving-file/firstName_file-"+nama_siswa+".png",transparent=True)
+    plt.savefig("D:\direktori-saving-file/firstName_file-"+nama_siswa+".png",transparent=True)#yang dirubah "lokasi direktori dan nama file
     #plt.show()
     plt.close()
