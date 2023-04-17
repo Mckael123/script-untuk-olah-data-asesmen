@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 # import plotly.express as px
 # contoh data
-data= pd.read_excel("untuk laporan.xlsx",sheet_name='LAPORAN')
+data= pd.read_excel("recap_name.xlsx",sheet_name='Nama_Sheet')#yang diubah yang recap_name dan Nama_sheeet sesuai file masing- masing
 
 # Data
 categories = ['Pengelolaan Stres', 'Adaptasi Sosial', 'Manajemen Waktu', 'Motivasi Berprestasi']
@@ -28,6 +28,6 @@ for index, row in data.iterrows():
    #plt.ylabel('Category')
 
     # Show plot
-    plt.savefig("D:\projek aac/tes maba\input\grafik dasar/GD-test_maba-"+nama_siswa+".png",transparent=True)
+    plt.savefig("D:\direktori-saving-file/firstName_file-"+nama_siswa+".png",transparent=True)
     #plt.show()
     plt.close()
