@@ -3,7 +3,7 @@ import pandas as pd
 import time
 # import plotly.express as px
 # contoh data
-data= pd.read_excel("untuk laporan.xlsx",sheet_name='LAPORAN')
+data= pd.read_excel("contoh_rekap_merger.xlsx",sheet_name='nama_sheet')#dapat dirubah nama file excel dan nama sheet pada file masing-masing
 
 # Extract data
 categories = ['Realistic','Investigative','Social','Conventional','Enterprising','Artistic']
@@ -30,7 +30,7 @@ for index, row in data.iterrows():
     #ax.pie(df.values(), labels=df.keys(), autopct='%1.1f%%', colors=colors, wedgeprops=dict(width=0.5, edgecolor='w'),pctdistance=1.2, labeldistance=1.4)
     
     # # tampilkan grafik
-    plt.savefig("D:\projek aac/tes maba\input\grafik MK/test_maba-"+nama_siswa+".png",transparent=True)
+    plt.savefig("D:\direktori_place_file/FirstName_file-"+nama_siswa+".png",transparent=True)#dirubah lokasi direktori file dan first name file
     #time.sleep(5)
     #plt.show()
     plt.close()
