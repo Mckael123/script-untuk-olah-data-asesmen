@@ -1,8 +1,8 @@
 function MencariID() {
 var ss=SpreadsheetApp.getActiveSpreadsheet();
 var s=ss.getActiveSheet();
-var c=s.getRange("x2");
-var fldr=DriveApp.getFolderById("1MieE3XPlwxabsSL7lS7giXVTZjjzbQN4");
+var c=s.getRange("x2");#diganti dengan cell dalam spreadsheet yang akan di isi link ID file dari drive
+var fldr=DriveApp.getFolderById("1MieE3XPlwxabsSL7lS7giXVTZjjzbQN4"); #diganti dengan ID link drive
 var files=fldr.getFiles();
 var names=[],f,str; 
 while (files.hasNext()) {
@@ -15,8 +15,8 @@ s.getRange(c.getRow(),c.getColumn(),names.length).setFormulas(names); }
 function MencariNama() {
 var ss=SpreadsheetApp.getActiveSpreadsheet();
 var s=ss.getActiveSheet();
-var c=s.getRange("y2");
-var fldr=DriveApp.getFolderById("1MieE3XPlwxabsSL7lS7giXVTZjjzbQN4");
+var c=s.getRange("y2");;#diganti dengan cell dalam spreadsheet yang akan di isi nama file dari drive
+var fldr=DriveApp.getFolderById("1MieE3XPlwxabsSL7lS7giXVTZjjzbQN4");#diganti dengan ID link drive
 var files=fldr.getFiles();
 var names=[],f,str; 
 while (files.hasNext()) {
