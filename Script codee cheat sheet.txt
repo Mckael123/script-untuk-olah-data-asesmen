@@ -1,2 +1,19 @@
-Script code in EXCELL:
+Script code for report assessment:
+
+1.looking for another value in another sheet :
+=VLOOKUP(cell yang jadi index pencarian,area pencarian,kolom ke berapa,FALSE)
+
+=INDEX(kolom area pencarian,MATCH(cell yang jadi index pencarian,kolom yang dijadikan index pencarian,0),0)
+
+2. url drive get downloaded pic for report:
+-https://drive.google.com/uc?id=
+
+3.looking for high value in 1 row :
+=INDEX($B$1:$G$1,MATCH(LARGE(B3:G3,1),B3:G3,0))
+
+4.count per aspek TPA:
+=(aspek tpa/20)*600+200
+
+5. conditional checking for Recomendation:
+=IF(SUMPRODUCT(--(I3:X3<$I$2:$X$2))<=1,"Disarankan",IF(SUMPRODUCT(--(I3:X3<$I$2:$X$2))<=4,"Dipertimbangkan","Kurang Disarankan"))
 
