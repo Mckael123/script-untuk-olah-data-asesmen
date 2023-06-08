@@ -17,3 +17,5 @@ Script code for report assessment:
 5. conditional checking for Recomendation:
 =IF(SUMPRODUCT(--(I3:X3<$I$2:$X$2))<=1,"Disarankan",IF(SUMPRODUCT(--(I3:X3<$I$2:$X$2))<=4,"Dipertimbangkan","Kurang Disarankan"))
 
+6. check duplicate value in spreadsheet:
+=COUNTIF($C$1:$C;C1)>1
