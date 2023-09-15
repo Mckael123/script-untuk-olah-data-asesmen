@@ -15,7 +15,7 @@ Script code for report assessment:
 =(aspek tpa/20)*600+200
 
 5. conditional checking for Recomendation:
-=IF(SUMPRODUCT(--(I3:X3<$I$2:$X$2))<=1,"Disarankan",IF(SUMPRODUCT(--(I3:X3<$I$2:$X$2))<=4,"Dipertimbangkan","Kurang Disarankan"))
+=IF(SUMPRODUCT(--(G3:X3<$G$2:$X$2))<=5,"Disarankan",IF(SUMPRODUCT(--(G3:X3<$G$2:$X$2))<=8,"Dipertimbangkan","Kurang Disarankan"))
 
 6. check duplicate value in spreadsheet:
 =COUNTIF($C$1:$C;C1)>1
