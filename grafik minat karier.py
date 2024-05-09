@@ -1,8 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
-import time
-# import plotly.express as px
-# contoh data
+
+# import data
 data= pd.read_excel("contoh_rekap_merger.xlsx",sheet_name='nama_sheet')#dapat dirubah nama file excel dan nama sheet pada file masing-masing
 
 # Extract data
@@ -31,7 +30,6 @@ for index, row in data.iterrows():
     
     # # tampilkan grafik
     plt.savefig("D:\direktori_place_file/FirstName_file-"+nama_siswa+".png",transparent=True)#dirubah lokasi direktori file dan first name file
-    #time.sleep(5)
     #plt.show()
     plt.close()
     
